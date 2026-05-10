@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Prompt", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffdce8, #fff0f5);
+      overflow: hidden;
+      color: #ff4f87;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(10px);
+      border-radius: 30px;
+      padding: 30px;
+      width: 100%;
+      max-width: 520px;
+      box-shadow: 0 10px 30px rgba(255, 100, 150, 0.2);
+      animation: fadeIn 0.8s ease;
+      position: absolute;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .title {
+      font-size: 2rem;
+      line-height: 1.7;
+      font-weight: bold;
+    }
+
+    .final-text {
+      font-size: 2rem;
+      line-height: 1.8;
+      font-weight: bold;
+    }
+
+    .btn {
+      margin-top: 30px;
+      background: #ff6fa3;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(255,111,163,0.3);
+    }
+
+    .btn:hover {
+      background: #ff4f87;
+      transform: scale(1.05);
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .heart {
+      position: fixed;
+      top: -20px;
+      color: #ff7ca8;
+      animation: fall linear forwards;
+      z-index: 999;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card" id="page1">
+      <div class="title">หวัดดีคับบบบบ🩷</div>
+      <button class="btn" onclick="nextPage(1)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page2">
+      <div class="title">เค้าตื่นเต้นมากเลยนะตั้งแต่วันแรกที่เค้าทักไปหาเธออะะะ🩷</div>
+      <button class="btn" onclick="nextPage(2)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page3">
+      <div class="title">และทุกวันเค้าก็รู้สึกดีขึ้นทุกวันเลยนะะะ🩷</div>
+      <button class="btn" onclick="nextPage(3)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page4">
+      <div class="title">เค้าจะจำทุกอย่างเกี่ยวกับเธอให้ได้ทุกอย่างเลยและจะไม่มีวันลืมเลยยยย🩷</div>
+      <button class="btn" onclick="nextPage(4)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page5">
+      <div class="title">เค้าอยากอยู่กับเธอแบบนี้ไปนานนนนนๆๆๆๆๆๆๆๆๆๆๆเลยยยยยย🩷</div>
+      <button class="btn" onclick="nextPage(5)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page6">
+      <div class="title">ถ้าเค้าทำตัวให้เธอไม่พอใจเค้าขอโทษด้วยนะทนกับเค้าหน่อยนะะะะ🩷</div>
+      <button class="btn" onclick="nextPage(6)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page7">
+      <div class="title">อย่าพึ่งเบื่อเค้านะะะะ🩷</div>
+      <button class="btn" onclick="nextPage(7)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page8">
+      <div class="title">รู้มั้ยเธอคือคนแรกเลยนะที่เค้ารู้สึก รัก มากขนาดนี้😳</div>
+      <button class="btn" onclick="nextPage(8)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page9">
+      <div class="title">ฟังเพลงไปก่อนนะะ5555555</div>
+      <button class="btn" onclick="nextPage(9)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page10">
+      <div class="title">แล้วก็ขอบคุณของขวัญที่เธอให้มานะะะะ🩷</div>
+      <button class="btn" onclick="nextPage(10)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page11">
+      <div class="title">เค้าชอบมากเลยยย🩷</div>
+      <button class="btn" onclick="nextPage(11)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page12">
+      <div class="title">เค้ามีเรื่องอยากถามอะะะ🩷</div>
+      <button class="btn" onclick="nextPage(12)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page13">
+      <div class="title">เธออยากไปต่อกับเค้ามั้ยยย🩷</div>
+      <button class="btn" onclick="nextPage(13)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page14">
+      <div class="title">เค้าสัญญาว่าจะไม่ทำให้เสียใจเลยยยย🩷</div>
+      <button class="btn" onclick="nextPage(14)">ต่อไป</button>
+    </div>
+
+    <div class="card hidden" id="page15">
+      <div class="title">เป็นแฟนกับเค้ามั้ยยยย🩷</div>
+
+      <div class="buttons">
+        <button class="btn" onclick="love()">ตกลง🩷</button>
+        <button class="btn" onclick="love()">ตกลงอยู่ดีแค่อยู่ข้างขวา🩷</button>
+      </div>
+    </div>
+
+    <div class="card hidden" id="page16">
+      <div class="final-text">
+        เป็นแฟนกันแล้วนะะะะ🩷🩷🩷🩷<br><br>
+        เอาใจเค้าไปแล้วไม่รับคืนนะะะ🩷🩷🩷🩷
+song.mp3    function nextPage(page) {
+      const current = document.getElementById(`page${page}`);
+      const next = document.getElementById(`page${page + 1}`);
+
+      if (current) current.classList.add('hidden');
+      if (next) next.classList.remove('hidden');
+    }
+
+    function love() {
+      document.getElementById('page15').classList.add('hidden');
+      document.getElementById('page1ฆ6').classList.remove('hidden');
+    }
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
+      heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 250);
+  </script>
+
+</body>
+</html>
