@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For You ❤️</title>
+  <title>For You 🩷</title>
 
   <style>
     * {
@@ -31,10 +31,10 @@
     }
 
     .card {
-      background: rgba(255,255,255,0.75);
+      background: rgba(255,255,255,0.8);
       backdrop-filter: blur(10px);
       border-radius: 30px;
-      padding: 30px;
+      padding: 35px;
       width: 100%;
       max-width: 520px;
       box-shadow: 0 10px 30px rgba(255, 100, 150, 0.2);
@@ -48,7 +48,7 @@
 
     .title {
       font-size: 2rem;
-      line-height: 1.7;
+      line-height: 1.8;
       font-weight: bold;
     }
 
@@ -84,6 +84,15 @@
       flex-wrap: wrap;
     }
 
+    .photo {
+      width: 100%;
+      max-width: 450px;
+      height: 650px;
+      object-fit: cover;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(255, 100, 150, 0.2);
+    }
+
     .heart {
       position: fixed;
       top: -20px;
@@ -114,121 +123,238 @@
 </head>
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <div class="card" id="page1">
-      <div class="title">หวัดดีคับบบบบ🩷</div>
-      <button class="btn" onclick="nextPage(1)">ต่อไป</button>
+  <div class="card" id="page1">
+    <div class="title">หวัดดีคับคนสวยยย🩷</div>
+    <button class="btn" onclick="nextPage(1)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page2">
+    <div class="title">เค้ามีไรให้อ่านนน🩷</div>
+    <button class="btn" onclick="nextPage(2)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page3">
+    <div class="title">เธอรู้มั้ยเค้าชอบเธอตั้งแต่วันแรกจริงๆนะๆๆ🩷</div>
+    <button class="btn" onclick="nextPage(3)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page4">
+    <div class="title">เลยเป็นเพลงนี้🩷</div>
+    <button class="btn" onclick="nextPage(4)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page5">
+    <div class="title">ปัดช้าๆหน่อยก็ได้นะ5555555</div>
+    <button class="btn" onclick="nextPage(5)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page6">
+    <div class="title">ฟังเพลงไปก่อนน🩷</div>
+    <button class="btn" onclick="nextPage(6)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page7">
+    <div class="title">เค้ารู้สึกดีมากเลยนะที่ใช้เวลาอยู่กับเธออะะ🩷</div>
+    <button class="btn" onclick="nextPage(7)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page8">
+    <div class="title">เราก็คุยกันมาตั้ง 25 วันแล้วนะะ🩷</div>
+    <button class="btn" onclick="nextPage(8)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page9">
+    <div class="title">ก็รู้จักนิสัยเรื่องส่วนตัวบางเรื่องพอสมควรเลยยยย🩷</div>
+    <button class="btn" onclick="nextPage(9)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page10">
+    <div class="title">ได้รู้จักด้านที่คนอื่นไม่เคยเห็นด้วยยย🩷</div>
+    <button class="btn" onclick="nextPage(10)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page11">
+    <div class="title">ได้ทำอะไรด้วยกันและเค้าก็อยากทำอะไรหลายๆอย่างกับเธอมากกว่านี้อีกกก🩷</div>
+    <button class="btn" onclick="nextPage(11)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page12">
+    <div class="title">เธออยากทำอะไรก็บอกได้นะะ🩷</div>
+    <button class="btn" onclick="nextPage(12)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page13">
+    <div class="title">เป็นเธออะไรเค้าก็ยอมมม🩷</div>
+    <button class="btn" onclick="nextPage(13)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page14">
+    <div class="title">เมื่อวานเค้าสนุกมากเลยนะะะะ🩷</div>
+    <button class="btn" onclick="nextPage(14)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page15">
+    <div class="title">แล้วก็เขินมากด้วยยยย5555555🩷</div>
+    <button class="btn" onclick="nextPage(15)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page16">
+    <div class="title">ตอนเธอจุ๊บเค้าเขินสุดๆๆๆๆๆๆๆเลยยยยยย555555🩷</div>
+    <button class="btn" onclick="nextPage(16)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page17">
+    <div class="title">เค้าอยากเที่ยวอีกเลยยยยย🩷</div>
+    <button class="btn" onclick="nextPage(17)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page18">
+    <div class="title">ตอนกลับเค้าแอบเสียดายอยู่นะะ🥲</div>
+    <button class="btn" onclick="nextPage(18)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page19">
+    <div class="title">ยังคิดอยู่เลยทำไมเวลามันผ่านไปไวจังงง🥲</div>
+    <button class="btn" onclick="nextPage(19)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page20">
+    <div class="title">และตอนเค้าอยู่กับเธอเค้าตื่นเต้นและใจเต้นแรงมากกกก😳</div>
+    <button class="btn" onclick="nextPage(20)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page21">
+    <div class="title">เหงื่อก็ออกไม่ชอบเลยยยย😡</div>
+    <button class="btn" onclick="nextPage(21)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page22">
+    <div class="title">ขอบคุณนะที่ไม่รังเกียดเลยยย🩷</div>
+    <button class="btn" onclick="nextPage(22)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page23">
+    <div class="title">เค้าอยากใช้เวลาอยู่กับเธอให้นานกว่านั้นอีกกกกกก🩷</div>
+    <button class="btn" onclick="nextPage(23)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page24">
+    <div class="title">อยากไปเที่ยวด้วยกันอีกกกกก🩷</div>
+    <button class="btn" onclick="nextPage(24)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page25">
+    <div class="title">อยากยิ้มหัวเราะกับเธออีกกกกก🩷</div>
+    <button class="btn" onclick="nextPage(25)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page26">
+    <div class="title">อยากตื่นมาแล้วเจอเธออยู่ข้างๆๆ🩷</div>
+    <button class="btn" onclick="nextPage(26)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page27">
+    <div class="title">อยากทำทุกกกกอย่างแล้วเห็นเธอตลอดเลยยยย🩷</div>
+    <button class="btn" onclick="nextPage(27)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page28">
+    <div class="title">เธอคือคนแรกเลยนะที่ทำให้เค้าเป็นแบบนี้ๆ🩷</div>
+    <button class="btn" onclick="nextPage(28)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page29">
+    <div class="title">รู้สึกรักมากขนาดนี้ๆๆ😳</div>
+    <button class="btn" onclick="nextPage(29)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page30">
+    <div class="title">โอ้ยยยยเขินนนน😳😳😳</div>
+    <button class="btn" onclick="nextPage(30)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page31">
+    <div class="title">อย่าบอกใครกันนะเค้าโดนล้อตายเลยยย5555555😳</div>
+    <button class="btn" onclick="nextPage(31)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page32">
+    <div class="title">เค้าอยากทำทุกอย่างให้ดีกว่านี้ๆๆ🩷</div>
+    <button class="btn" onclick="nextPage(32)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page33">
+    <div class="title">เค้าสัญญาว่าจะไม่ทำให้เสียใจเยยยย🩷</div>
+    <button class="btn" onclick="nextPage(33)">ต่อไป</button>
+  </div>
+
+  <div class="card hidden" id="page34">
+    <div class="title">เป็นแฟนกันมั้ยยย🩷</div>
+
+    <div class="buttons">
+      <button class="btn" onclick="love()">เป็น🩷</button>
+      <button class="btn" onclick="love()">เป็นเหมือนกันแต่อยู่ด้านขวา🩷</button>
     </div>
+  </div>
 
-    <div class="card hidden" id="page2">
-      <div class="title">เค้าตื่นเต้นมากเลยนะตั้งแต่วันแรกที่เค้าทักไปหาเธออะะะ🩷</div>
-      <button class="btn" onclick="nextPage(2)">ต่อไป</button>
-    </div>
+  <div class="card hidden" id="page35">
+    <div class="final-text">เป็นแฟนกันแล้วนะ🩷🩷</div>
+    <button class="btn" onclick="nextPage(35)">ต่อไป</button>
+  </div>
 
-    <div class="card hidden" id="page3">
-      <div class="title">และทุกวันเค้าก็รู้สึกดีขึ้นทุกวันเลยนะะะ🩷</div>
-      <button class="btn" onclick="nextPage(3)">ต่อไป</button>
-    </div>
+  <div class="card hidden" id="page36">
+    <img src="IMG_1.jpg" class="photo">
+    <button class="btn" onclick="nextPage(36)">ต่อไป</button>
+  </div>
 
-    <div class="card hidden" id="page4">
-      <div class="title">เค้าจะจำทุกอย่างเกี่ยวกับเธอให้ได้ทุกอย่างเลยและจะไม่มีวันลืมเลยยยย🩷</div>
-      <button class="btn" onclick="nextPage(4)">ต่อไป</button>
-    </div>
+  <div class="card hidden" id="page37">
+    <img src="IMG_2.jpg" class="photo">
+    <button class="btn" onclick="nextPage(37)">ต่อไป</button>
+  </div>
 
-    <div class="card hidden" id="page5">
-      <div class="title">เค้าอยากอยู่กับเธอแบบนี้ไปนานนนนนๆๆๆๆๆๆๆๆๆๆๆเลยยยยยย🩷</div>
-      <button class="btn" onclick="nextPage(5)">ต่อไป</button>
-    </div>
+  <div class="card hidden" id="page38">
+    <img src="IMG_3.jpg" class="photo">
+  </div>
 
-    <div class="card hidden" id="page6">
-      <div class="title">ถ้าเค้าทำตัวให้เธอไม่พอใจเค้าขอโทษด้วยนะทนกับเค้าหน่อยนะะะะ🩷</div>
-      <button class="btn" onclick="nextPage(6)">ต่อไป</button>
-    </div>
+</div>
 
-    <div class="card hidden" id="page7">
-      <div class="title">อย่าพึ่งเบื่อเค้านะะะะ🩷</div>
-      <button class="btn" onclick="nextPage(7)">ต่อไป</button>
-    </div>
+<audio autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
 
-    <div class="card hidden" id="page8">
-      <div class="title">รู้มั้ยเธอคือคนแรกเลยนะที่เค้ารู้สึก รัก มากขนาดนี้😳</div>
-      <button class="btn" onclick="nextPage(8)">ต่อไป</button>
-    </div>
+<script>
+  function nextPage(page) {
+    const current = document.getElementById(`page${page}`);
+    const next = document.getElementById(`page${page + 1}`);
 
-    <div class="card hidden" id="page9">
-      <div class="title">ฟังเพลงไปก่อนนะะ5555555</div>
-      <button class="btn" onclick="nextPage(9)">ต่อไป</button>
-    </div>
+    if (current) current.classList.add('hidden');
+    if (next) next.classList.remove('hidden');
+  }
 
-    <div class="card hidden" id="page10">
-      <div class="title">แล้วก็ขอบคุณของขวัญที่เธอให้มานะะะะ🩷</div>
-      <button class="btn" onclick="nextPage(10)">ต่อไป</button>
-    </div>
+  function love() {
+    document.getElementById('page34').classList.add('hidden');
+    document.getElementById('page35').classList.remove('hidden');
+  }
 
-    <div class="card hidden" id="page11">
-      <div class="title">เค้าชอบมากเลยยย🩷</div>
-      <button class="btn" onclick="nextPage(11)">ต่อไป</button>
-    </div>
+  function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '❤';
+    heart.style.left = Math.random() * window.innerWidth + 'px';
+    heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
+    heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
 
-    <div class="card hidden" id="page12">
-      <div class="title">เค้ามีเรื่องอยากถามอะะะ🩷</div>
-      <button class="btn" onclick="nextPage(12)">ต่อไป</button>
-    </div>
+    document.body.appendChild(heart);
 
-    <div class="card hidden" id="page13">
-      <div class="title">เธออยากไปต่อกับเค้ามั้ยยย🩷</div>
-      <button class="btn" onclick="nextPage(13)">ต่อไป</button>
-    </div>
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }
 
-    <div class="card hidden" id="page14">
-      <div class="title">เค้าสัญญาว่าจะไม่ทำให้เสียใจเลยยยย🩷</div>
-      <button class="btn" onclick="nextPage(14)">ต่อไป</button>
-    </div>
-
-    <div class="card hidden" id="page15">
-      <div class="title">เป็นแฟนกับเค้ามั้ยยยย🩷</div>
-
-      <div class="buttons">
-        <button class="btn" onclick="love()">ตกลง🩷</button>
-        <button class="btn" onclick="love()">ตกลงอยู่ดีแค่อยู่ข้างขวา🩷</button>
-      </div>
-    </div>
-
-    <div class="card hidden" id="page16">
-      <div class="final-text">
-        เป็นแฟนกันแล้วนะะะะ🩷🩷🩷🩷<br><br>
-        เอาใจเค้าไปแล้วไม่รับคืนนะะะ🩷🩷🩷🩷
-song.mp3    function nextPage(page) {
-      const current = document.getElementById(`page${page}`);
-      const next = document.getElementById(`page${page + 1}`);
-
-      if (current) current.classList.add('hidden');
-      if (next) next.classList.remove('hidden');
-    }
-
-    function love() {
-      document.getElementById('page15').classList.add('hidden');
-      document.getElementById('page1ฆ6').classList.remove('hidden');
-    }
-
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.innerHTML = '❤';
-      heart.style.left = Math.random() * window.innerWidth + 'px';
-      heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
-      heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
-
-      document.body.appendChild(heart);
-
-      setTimeout(() => {
-        heart.remove();
-      }, 6000);
-    }
-
-    setInterval(createHeart, 250);
-  </script>
+  setInterval(createHeart, 250);
+</script>
 
 </body>
 </html>
